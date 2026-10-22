@@ -5,6 +5,16 @@
         self.isbn = isbn
         self.titre = titre
         self.auteur = auteur
+        self.disponible = True
+
+    def emprunter(self):
+        if not self.disponible:
+            raise ValueError(f"Livre déjà emprunté : {self.titre}")
+        self.disponible = False
+
+    def rendre(self):
+        self.disponible = True
 
     def __str__(self):
-        return f"{self.titre} ({self.auteur})"
+        statut = "disponible" if self.disponible else "emprunté"
+        return f"{self.titre} ({self.auteur}) - {statut}"
