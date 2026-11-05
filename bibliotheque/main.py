@@ -1,4 +1,5 @@
-﻿from bibliotheque.catalogue import Bibliotheque
+﻿
+from bibliotheque.catalogue import Bibliotheque
 from bibliotheque.livre import Livre
 
 
@@ -32,9 +33,11 @@ def main():
     for livre in biblio.rechercher_par_auteur("Albert Camus"):
         print(f" - {livre}")
 
-
-if __name__ == "__main__":
-    main()
+    # Recherche par titre
     print("Recherche « peste » :")
     for livre in biblio.rechercher_par_titre("peste"):
         print(f" - {livre}")
+
+
+if __name__ == "__main__":
+    main()
