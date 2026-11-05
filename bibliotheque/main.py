@@ -35,12 +35,14 @@ def main():
     for livre in biblio.rechercher_par_auteur("Albert Camus"):
         print(f" - {livre}")
 
-    # Recherche par titre
-    print("Recherche « peste » :")
-    for livre in biblio.rechercher_par_titre("peste"):
-        print(f" - {livre}")
-        exporter_json(biblio, "livres.json")
-    print("Export JSON terminé !")
+   # Recherche par titre
+print("Recherche « peste » :")
+for livre in biblio.rechercher_par_titre("peste"):
+    print(f" - {livre}")
+
+# Export JSON
+exporter_json(biblio, "livres.json")
+print("Export JSON terminé !")
 
 if __name__ == "__main__":
     
