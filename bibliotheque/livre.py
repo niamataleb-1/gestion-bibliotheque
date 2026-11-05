@@ -18,3 +18,8 @@
     def __str__(self):
         statut = "disponible" if self.disponible else "emprunté"
         return f"{self.titre} ({self.auteur}) - {statut}"
+
+def __str__(self):
+    marque = "+" if self.disponible else "-"
+    return f"[{marque}] {self.titre} - {self.auteur}"
+
