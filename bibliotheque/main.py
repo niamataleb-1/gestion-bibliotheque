@@ -22,6 +22,7 @@ def main():
     )
 
     print("=== Bibliothèque ===")
+    print(f"{len(biblio)} livres au catalogue")
     for livre in biblio.livres:
         print(f" - {livre}")
 
