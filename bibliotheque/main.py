@@ -35,3 +35,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    print("Recherche « peste » :")
+    for livre in biblio.rechercher_par_titre("peste"):
+        print(f" - {livre}")
