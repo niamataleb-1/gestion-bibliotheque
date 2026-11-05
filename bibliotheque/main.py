@@ -20,7 +20,7 @@ def main():
         Livre("978-2-07-036822-8", "La Peste", "Albert Camus")
     )
 
-    print("=== Bibliothèque ===")
+    print("=== Bibliothèque (beta) ===")
     for livre in biblio.livres:
         print(f" - {livre}")
 
