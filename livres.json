@@ -1,0 +1,20 @@
+[
+    {
+        "isbn": "978-2-07-040850-4",
+        "titre": "Le Petit Prince",
+        "auteur": "Antoine de Saint-Exupéry",
+        "disponible": true
+    },
+    {
+        "isbn": "978-2-07-036002-4",
+        "titre": "L'Étranger",
+        "auteur": "Albert Camus",
+        "disponible": true
+    },
+    {
+        "isbn": "978-2-07-036822-8",
+        "titre": "La Peste",
+        "auteur": "Albert Camus",
+        "disponible": false
+    }
+]
