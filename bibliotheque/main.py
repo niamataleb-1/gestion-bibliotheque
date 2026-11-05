@@ -1,6 +1,7 @@
 ﻿
 from bibliotheque.catalogue import Bibliotheque
 from bibliotheque.livre import Livre
+from bibliotheque.export import exporter_json
 
 
 def main():
@@ -38,7 +39,9 @@ def main():
     print("Recherche « peste » :")
     for livre in biblio.rechercher_par_titre("peste"):
         print(f" - {livre}")
-
+        exporter_json(biblio, "livres.json")
+    print("Export JSON terminé !")
 
 if __name__ == "__main__":
+    
     main()
