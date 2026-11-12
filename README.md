@@ -11,3 +11,6 @@ Niaama Taleb
 Fonctionnalités
 Ajout et recherche de livres
 Recherche par titre, auteur et ISBN
+## Contribuer
+
+Consultez [CONTRIBUTING.md](CONTRIBUTING.md) avant d'ouvrir une pull request.
