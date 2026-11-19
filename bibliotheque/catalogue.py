@@ -1,4 +1,5 @@
-﻿class Bibliotheque:
+﻿
+class Bibliotheque:
     """Catalogue de livres."""
 
     def __init__(self):
@@ -25,12 +26,30 @@
 
     def __len__(self):
         return len(self._livres)
+
     def rechercher_par_titre(self, mot):
         mot = mot.lower()
-        return [l for l in self._livres if mot in l.titre.lower()]
+        return [
+            l for l in self._livres
+            if mot in l.titre.lower()
+        ]
 
     def nombre_disponibles(self):
         return sum(1 for l in self._livres if l.disponible)
 
     def trier_par_titre(self, inverse=False):
-        return sorted(self._livres, key=lambda l: l.titre, reverse=inverse)
+        return sorted(
+            self._livres,
+            key=lambda l: l.titre,
+            reverse=inverse
+        )
+
+    def supprimer(self, isbn):
+        """Supprime le livre d'ISBN donné. Retourne True si un livre a été supprimé."""
+        livre = self.rechercher_par_isbn(isbn)
+
+        if livre is None:
+            return False
+
+        self._livres.remove(livre)
+        return True
