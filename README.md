@@ -9,6 +9,7 @@ Python 3.9 ou supérieur.
 
 ## Auteurs
 Niaama Taleb
+Jihad ZAHAF
 
 ## Fonctionnalités
 - Ajout et recherche de livres
